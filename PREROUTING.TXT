@@ -1,0 +1,7 @@
+Chain PREROUTING (policy ACCEPT)
+target     prot opt source               destination         
+PREROUTING_direct  all  --  anywhere             anywhere            
+PREROUTING_ZONES_SOURCE  all  --  anywhere             anywhere            
+PREROUTING_ZONES  all  --  anywhere             anywhere            
+DNAT       tcp  --  vm-2.c.shirdast-nw-dev.internal  anywhere             tcp dpt:webcache to:10.128.0.95:8080
+DNAT       tcp  --  vm-2.c.shirdast-nw-dev.internal  anywhere             tcp dpt:http to:10.128.0.96:80

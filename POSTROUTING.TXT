@@ -1,0 +1,7 @@
+Chain POSTROUTING (policy ACCEPT)
+target     prot opt source               destination         
+POSTROUTING_direct  all  --  anywhere             anywhere            
+POSTROUTING_ZONES_SOURCE  all  --  anywhere             anywhere            
+POSTROUTING_ZONES  all  --  anywhere             anywhere            
+MASQUERADE  all  --  10.128.0.96          anywhere            
+MASQUERADE  all  --  vm-2.c.shirdast-nw-dev.internal  anywhere            
