@@ -4,7 +4,7 @@
 
 resource "google_compute_instance" "default" {
   project      = var.project_id # Replace with your project ID in quotes
-  zone         = "us-central1-b"
+  zone         = var.zone #can be replaced with the zone you want to deploy the VM in. note that the both VPCs should have a subnet in this zone 
   name         = "backend-instance"
   machine_type = "e2-medium"
   boot_disk {
