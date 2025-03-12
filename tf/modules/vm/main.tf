@@ -1,5 +1,5 @@
 #source https://cloud.google.com/vpc/docs/create-use-multiple-interfaces#creating_virtual_machine_instances_with_multiple_network_interfaces
-# use 
+# missing: nat configuration and bash script
 
 
 resource "google_compute_instance" "default" {
